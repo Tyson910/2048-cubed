@@ -1,6 +1,12 @@
 export default class Cube {
+  x: number;
+  y: number;
+  z: number;
+  value: number;
+  previousPosition: { x: number; y: number; z: number } | null;
+  mergedFrom: null;
 
-  constructor({ x, y, z }, value = 2) {
+  constructor({ x, y, z }: { x: number; y: number; z: number }, value = 2) {
     this.x = x;
     this.y = y;
     this.z = z;
@@ -16,7 +22,7 @@ export default class Cube {
     return this;
   };
 
-  updatePosition = ({ x, y, z }) => {
+  updatePosition = ({ x, y, z }: { x: number; y: number; z: number }) => {
     this.x = x;
     this.y = y;
     this.z = z;
@@ -24,6 +30,6 @@ export default class Cube {
   };
 
   get position() {
-    return { x: this.x, y: this.y, z: this.z }
+    return { x: this.x, y: this.y, z: this.z };
   }
 }
