@@ -12,6 +12,7 @@
     "three": "^0.156.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.7",
     "@types/three": "^0.166.0",
     "parcel": "^2.9.3",
     "parcel-plugin-static-files-copy": "^2.6.0",
